@@ -1,0 +1,142 @@
+section {
+  gap: 2rem;
+  display: flex;
+  padding-top: 70px;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    color: white;
+    font-size: 28px;
+    max-width: 620px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .primary-text {
+    color: #00AD00;
+  }
+
+  .book-image {
+    width: 670px;
+    margin-right: -76px;
+  }
+
+  .container {
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+
+    .writer-info {
+      gap: 1rem;
+      display: flex;
+      max-width: 300px;
+      align-items: center;
+      flex-direction: column;
+
+      .info-text {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .info-title {
+        text-transform: uppercase;
+      }
+
+      .info-image {
+        width: 140px;
+      }
+
+      .info-footer {
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+        text-align: left;
+      }
+
+      .content-title {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .writer-container {
+        display: flex;
+        margin-top: -40px;
+        align-items: center;
+        flex-direction: column;
+
+        span {
+          font-size: 14px;
+          font-weight: bold;
+          border-radius: 10px;
+          padding: 0.125rem 0.5rem;
+        }
+
+        .writer-text-1 {
+          color: #00AD00;
+          background-color: white;
+        }
+
+        .writer-text-2 {
+          color: white;
+          background: #00AD00;
+        }
+      }
+    }
+  }
+
+  .footer {
+    gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .footer-text {
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .logos {
+      gap: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media(max-width: 900px) {
+  .content {
+    margin-bottom: 2.5rem;
+    gap: 3rem;
+    flex-direction: column;
+  }
+
+  .book-image {
+    margin-right: 0 !important;
+    width: 520px !important;
+  }
+}
+
+@media(max-width: 600px) {
+  section {
+    padding: 3rem 1rem 1rem 1rem;
+  }
+
+  h1 {
+    font-size: 20px !important;
+  }
+
+  .book-image {
+    width: 320px !important;
+  }
+}
